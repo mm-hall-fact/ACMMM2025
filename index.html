@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Speech Event Extraction.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsible AI challenge @ ICME 25: Multimodal Hallucination Detection and Fact Checking</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <!--  <script src="./static/js/index.js"></script>-->
+    <style>
+        pre {outline: 1px solid #ccc; }
+         .string { color: green; }
+         .number { color: darkorange; }
+         .boolean { color: blue; }
+         .null { color: magenta; }
+         .key { color: red; }
+        ._table{width: 100%; border-collapse: collapse; border:0px;}
+        ._table thead tr {font-size: 13px; color: #2e3b45;  text-align: center; background-color: rgba(230, 255, 250, 0.92); font-weight:bold;}
+        ._table td{line-height: 20px; text-align: center; padding: 4px 10px 3px 10px; height: 18px;border: 0px solid #ffffff;}
+        ._table tbody tr {background: #fff; font-size: 13px; color: #393939;}
+        ._table tbody tr:nth-child(2n){ background: #f3f3f3;}
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">Responsible AI challenge @ <a href="https://2025.ieeeicme.org/">ICME 25</a>: Multimodal Hallucination Detection and Fact Checking</h1>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Data Link. -->
+                                <span class="link-block">
+                                    <a href="#introduction"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span>Introduction</span>
+                                    </a>
+                                </span>
+                                <!-- Data Link. -->
+                                <span class="link-block">
+                                    <a href="#dataset"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span>Dataset</span>
+                                    </a>
+                                </span>
+
+                                <!-- Code Link. -->
+
+                                
+<!--                                <span class="link-block">-->
+<!--                                    <a href="https://github.com/SpeechEE/SpeechEE"-->
+<!--                                        class="external-link button is-normal is-rounded is-dark">-->
+<!--                                        <span>Code</span>-->
+<!--                                    </a>-->
+<!--                                </span>-->
+
+                                <span class="link-block">
+                                    <a href="#submission"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span>Submission</span>
+                                    </a>
+                                </span>
+
+                                
+
+                                <span class="link-block">
+                                    <a href="#timeline"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span>Timeline</span>
+                                    </a>
+                                </span>
+
+                                <!-- Paper Link. -->
+                                <span class="link-block">
+                                    <a href="#organizer"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span>Organizer</span>
+                                    </a>
+                                </span>
+
+<!--                                <span class="link-block">-->
+<!--                                    <a href="https://www.codabench.org/competitions/4897/"-->
+<!--                                        class="external-link button is-normal is-rounded is-dark">-->
+<!--                                        <span>CodaBench</span>-->
+<!--                                    </a>-->
+<!--                                </span>-->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="section"style="margin-top: -50px;">
+        <div class="container is-max-desktop">
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Leaderboard Task-1</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            TBD
+<!--                            Congratulations to the winners!-->
+                        </p>
+                        <table class="._table table-bordered table-striped" align="center">
+                            <tbody align="center" valign="center">
+                            <tr>
+                                <td>Rank</td>
+                                <td>Team</td>
+                                <td>Score</td>
+                              </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>?</td>
+                              <td>?</td>
+                            </tr>
+<!--                            <tr>-->
+<!--                              <td>2</td>-->
+<!--                              <td>USTC-IAT-United</td>-->
+<!--                              <td>62.1149</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>3</td>-->
+<!--                                <td>ppjj</td>-->
+<!--                                <td>59.8638</td>-->
+<!--                            </tr>-->
+
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Leaderboard Task-2</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            TBD
+<!--                            Congratulations to the winners!-->
+                        </p>
+                        <table class="._table table-bordered table-striped" align="center">
+                            <tbody align="center" valign="center">
+                            <tr>
+                                <td>Rank</td>
+                                <td>Team</td>
+                                <td>Score</td>
+                              </tr>
+                            <tr>
+                              <td>1</td>
+                              <td>?</td>
+                              <td>?</td>
+                            </tr>
+<!--                            <tr>-->
+<!--                              <td>1</td>-->
+<!--                              <td>Token</td>-->
+<!--                              <td>63.2064</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                              <td>2</td>-->
+<!--                              <td>USTC-IAT-United</td>-->
+<!--                              <td>62.1149</td>-->
+<!--                            </tr>-->
+<!--                            <tr>-->
+<!--                                <td>3</td>-->
+<!--                                <td>ppjj</td>-->
+<!--                                <td>59.8638</td>-->
+<!--                            </tr>-->
+
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Abstract. -->
+            <div id="introduction" class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Introduction</h2>
+                    <div class="content has-text-justified">
+
+<!--                        <div style="text-align: center;">-->
+<!--                            <img src="static/images/overview.png" width="90%" alt="">-->
+<!--                            <p><b>Overview: SpeechEE Task.</b></p>-->
+<!--                        </div>-->
+
+                        <p>
+The Responsible Multimodal AI Challenge aims to foster advancements in the development of reliable and trustworthy multimodal AI systems by addressing two crucial tasks: i) multimodal hallucination detection and ii) multimodal factuality detection. These tasks are designed to highlight the challenges and encourage innovative solutions for mitigating critical risks associated with generative multimodal AI. Task A, Multimodal Hallucination Detection, focuses on identifying hallucinated content in AI-generated captions for images. Participants will analyze captions to detect objects, attributes, or relationships that are fabricated or unsupported by the visual input. Task B, Multimodal Factuality Detection, emphasizes verifying the factuality of textual claims using both visual and contextual textual information. Participants will assess the factuality of claims in realworld scenarios. By addressing these tasks, the challenge seeks to promote the development of robust evaluation methodologies and algorithms that mitigate risks such as misinformation, bias, and errors in multimodal systems.
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+
+            <!-- Paper video. -->
+            <div id="task" div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Challenge Tasks</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            The challenge contains two subtasks.
+                        </p>
+<!--                        <p>-->
+                            <h3>Task-1:  Multimodal Hallucination Detection</h3>
+<!--                        </p>-->
+
+                        <div style="text-align: center;">
+                            <img src="static/images/task1.png" width="90%" alt="">
+                            <p><b>Task 1: Multimodal Hallucination Detection.</b></p>
+                        </div>
+                        <br>
+
+                        <p>
+                            The goal of this task is to detect hallucinated information in
+                            captions generated by multimodal AI systems. Participants are
+                            provided with an image and a caption generated by an AI
+                            system describing the image. Along with this, a predefined
+                            list of options is provided, where each option represents an
+                            object, attribute, or relationship mentioned in the caption.
+                            Participants must analyze the generated caption to determine
+                            which options in the list are hallucinated, meaning they are not
+                            supported or justified by the content of the given image. These
+                            hallucinations might include objects that do not appear in the
+                            image, attributes that do not match the visual characteristics,
+                            or relationships between objects that are incorrectly described.
+                            The task is treated as a multi-label classification problem,
+                            where multiple options in the list can simultaneously be
+                            hallucinations or non-hallucinations.
+                        </p>
+
+
+
+                        <br>
+
+                        <h3>Task-2: Multimodal Fact Checking</h3>
+
+                        <div style="text-align: center;">
+                            <img src="static/images/task2.png" width="90%" alt="">
+                            <p><b>Task 2: Event Argument Exraction.</b></p>
+                        </div>
+                        <br>
+                        <p>
+                        This task focuses on verifying the factual accuracy of claims by analyzing multimodal inputs. Participants are given:<br>
+• A claim in textual form, which can be a news headline, a sentence from an article, or a social media post.<br>
+• An accompanying image related to the claim.<br>
+• Additional context in textual form, such as the full text of the news article, a related social media discussion, or other supplementary information.<br>
+
+Participants must determine the factual accuracy of the claim
+based on all the provided inputs. They need to assign one
+of four possible labels to the claim: "True", "False",
+"Partially True", and "Not Verifiable". This
+task is treated as a four-class classification problem, requiring
+participants to consider both the visual and textual evidence
+to assess the claim’s factuality comprehensively.
+                         <p>
+
+<!--                        <div style="text-align: center;">-->
+<!--                            <img src="static/images/task3.png" width="90%" alt="">-->
+<!--                            <p><b>Task 3:  Event Quadruple Extraction.</b></p>-->
+<!--                        </div>-->
+<!--                        <p>-->
+<!--                            <b>Task-3:</b> Event Quadruple Extraction aims to extract the complete event record quadruple including event trigger, event type, argument role and argument mention. The evaluation metric for this sub-task is the F1 score.-->
+<!--                        </p>-->
+                        
+                        <div class="columns is-centered has-text-centered">
+                            <div>
+                                <h2 class="title is-3">Evaluation</h2>
+                                <div class="content has-text-justified">
+                                    <p>
+                          
+                                        The F1 score is computed using precision (P) and recall (R), which are calculated as follows:
+                                         <p>
+                                          <b><em>P = TP / ( TP + FP )</em></b>
+                                         </p>
+                                         <p>
+                                          <b><em>R = TP / ( TP + FN ) </em></b>
+                                         </p>
+                                         <p>
+                                          <b><em>F1 = 2 * P * R / ( P + R ) </em></b>
+                                         </p>
+                                       
+                                         where TP, FP, and FN represent specific items that are used to calculate the F1 score in the context of a Confusion_matrix.
+                                         In particular, when computing the micro-F1 score, TP corresponds to the number of predicted tuple that match exactly with those in the gold set. 
+                                         
+                                      </p>
+<!--                                      <p>-->
+<!--                                          Finally, we use the following score for ranking:-->
+<!--                                      </p>-->
+<!--                                      <p>-->
+<!--                                               <b>overall score=<em>0.3*Task<sub>1</sub>+0.3*Task<sub>2</sub>+0.4*Task<sub>3</sub></em></b>-->
+<!--                                      <p>-->
+<!--                                          We provide python scripts for evaluation, please refer to the <a href="#baseline">baseline codes</a> "/challenge/scoring.py".-->
+<!--                       -->
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+             <!-- Datasets. -->
+            <div class="columns is-centered has-text-centered">
+                <div id="dataset" class="column is-four-fifths">
+                    <h2 class="title is-3">Dataset</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            We will utilize synthetic and real-world multimodal datasets
+for these tasks, including balanced distributions of various
+scenarios. Table I and Table II are the dataset statistics. The
+datasets include diverse scenarios such as indoor, outdoor,
+social, and news contexts to ensure robust evaluation.
+                        </p>
+
+
+                        <div style="text-align: center;">
+                            <img src="static/images/data-1.png" width="80%" alt="">
+                            <p><b>Dataset for Task 1.</b></p>
+                        </div>
+                        <br>
+
+
+                        <div style="text-align: center;">
+                            <img src="static/images/data-2.png" width="80%" alt="">
+                            <p><b>Dataset for Task 2.</b></p>
+                        </div>
+                        <br>
+
+<!--                        <p>-->
+<!--                             The dataset for this challenge is derived from ACE2005-EN+. -->
+<!--                             It is a benchmark dataset for event extraction in the English language. -->
+<!--                             -->
+<!--                             ACE2005-EN+ extended the original ACE05-EN data by considering multi-token event triggers and pronoun roles. -->
+<!--                        </p>-->
+<!--                        <p>-->
+<!--                             This dataset contains 33 event types and 22 argument roles, with 19217 training data, 901 developing data and 676 testing data. The detailed information is recorded in the <a href="#baseline">baseline codes</a> "/challenge/event-schema.json".-->
+<!--                        </p>-->
+<!--                        <p>-->
+<!--                            Example of a sample:-->
+<!--                        </p>-->
+<!--                        <pre id="jsonShow">{"id": "train-3", "event": [{"trigger": "landed", "type": "Transport", "arguments": [{"name": "boat", "role": "Vehicle"}, {"name": "men", "role": "Artifact"}, {"name": "shores", "role": "Destination"}]}]}-->
+<!--</pre>-->
+<!--                        <p>-->
+<!--                            The datasets (audio) are avaliable on <a href="https://drive.google.com/file/d/1XZpUAL1JSamPvahpsBgMClDxuFt2rTKr/view">Google Drive</a> and the label json files are in the <a href="#baseline">baseline codes</a> "/challenge/data/ACE05EN".-->
+<!--                        </p>-->
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            
+            <!-- / Paper video. -->
+            <div class="columns is-centered has-text-centered">
+                <div id="submission" class="column is-four-fifths">
+                    <h2 class="title is-3">Participation and Submission</h2>
+                    <div class="content has-text-justified">
+                         <p>
+                            To participate in the challenge, please first register by submitting the <a href="https://forms.gle/nU6358E2Es31Nc3r8">form</a>.
+                        </p>
+
+                        
+<!--                        <pre id="jsonShow">-->
+<!--[-->
+<!--{-->
+<!--    "id": "test-0",-->
+<!--    "event": [{-->
+<!--        "trigger": "advance",-->
+<!--        "type": "Transport",-->
+<!--        "arguments": [{-->
+<!--            "name": "elements",-->
+<!--            "role": "Artifact"-->
+<!--        }, {-->
+<!--            "name": "city",-->
+<!--            "role": "Origin"-->
+<!--        }, {-->
+<!--            "name": "Baghdad",-->
+<!--            "role": "Destination"-->
+<!--        }]-->
+<!--    }]-->
+<!--},-->
+<!--{-->
+<!--    "id": "test-1",-->
+<!--    "event": [{-->
+<!--       ...-->
+<!--    }]-->
+<!--},-->
+<!--...-->
+<!--]-->
+<!--</pre>-->
+
+                        <p>
+                             Please submit your models and predicted results (in json files "results.json") and zip in one file.
+                            Participants should submit by sending email to us <a href="mailto: kai.lk@u.nus.edu">kai.lk@u.nus.edu</a>.
+                            We will review the submissions publish the ranking here.
+                        </p>
+<!--                        <p>-->
+<!--                            Feel free to contact us at <a href="mailto: kai.lk@u.nus.edu">kai.lk@u.nus.edu</a>.-->
+<!--                        </p>-->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="columns is-centered has-text-centered">
+                <div id="timeline" class="column is-four-fifths">
+                    <h2 class="title is-3">Timeline</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Please note: The submission deadline is at 11:59 p.m. (<a herf="https://www.timeanddate.com/time/zones/aoe" style="color:red">Anywhere on Earth</a>) of the stated deadline date.
+                        </p>
+                        <table class="._table table-bordered table-striped" align="center">
+                            <tbody align="center" valign="center">
+                            <tr>
+                              <td>Registration Opens</td>
+                              <td>February 01, 2025</td>
+                            </tr>
+                            <tr>
+                              <td>Training Data Release</td>
+                              <td>February 30, 2025</td>
+                            </tr>
+                            <tr>
+                                <td>Challenge Result Submission Deadline</td>
+                                <td>April 1, 2025</td>
+                            </tr>
+                            <tr>
+                                <td>Leaderboard Release</td>
+                                <td>April 10, 2025</td>
+                            </tr>
+                            <tr>
+                                <td>Challenge Paper Submission Deadline</td>
+                                <td>April 30, 2025</td>
+                            </tr>
+<!--                            <tr>-->
+<!--                                <td>Camera ready paper deadline</td>-->
+<!--                                <td>May 16, 2025</td>-->
+<!--                            </tr>-->
+
+
+
+                            <!-- <tr>
+                                <td><b style="color: red">Challenge Paper Submission Deadline</b>(follow <a href="https://2024.acmmm.org/important-dates">MM2024 Workshop Dates</a>)</td>
+                                <td><b style="color: red">August 19, 2024</b></td>
+                            </tr> -->
+
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- / Paper video. -->
+<!--            <div class="columns is-centered has-text-centered">-->
+<!--                <div id="baseline" class="column is-four-fifths">-->
+<!--                    <h2 class="title is-3">Baseline</h2>-->
+<!--                    <div class="content has-text-justified">-->
+<!--                      -->
+<!--                        <p>-->
+<!--                            Link to the code <a href="https://github.com/SpeechEE/SpeechEE">SpeechEE code</a>-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+            
+        
+             <!-- <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Registration</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                             Welcome and please apply for the VSD challenge via a form at <a href="https://docs.google.com/forms/d/e/1FAIpQLSfuKXhaN5qa61rWlwaE3VpJD5FHcVLH25Un95wch6fCKiXIGQ/viewform?usp=sf_link">this link</a>.
+                        </p>
+                        <p>
+                            Feel free to contact us at <a href="mailto: vsdchallenge@gmail.com">vsdchallenge@gmail.com</a>.
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+
+            
+            
+            
+<!--            <div class="columns is-centered has-text-centered">-->
+<!--                <div class="column is-four-fifths">-->
+<!--                    <h2 class="title is-3">Award of Top-ranking Participants</h2>-->
+<!--                    <div class="content has-text-justified">-->
+<!--                        <p>-->
+<!--                            Top-ranked participants in this competition will receive a certificate of achievement and will be recommended to write a technical paper for submission to the <a>XLLM Workshop of ACL 2025</a>.-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>   -->
+
+
+
+            <!-- / Paper video. -->
+            <div class="columns is-centered has-text-centered">
+                <div id="organizer" class="column is-four-fifths">
+                    <h2 class="title is-3">Organizers</h2>
+                    <div class="content has-text-justified">
+                        
+            <p>Kai Liu (National University of Singapore, Singapore)</p>
+            <p>Xudong Han (University of Sussex, UK)</p>
+            <p>Yanlin Li (National University of Singapore, Singapore)</p>
+            <p>Hao Li (Wuhan University, China)</p>
+            <p>Zheng Wang (Wuhan University, China)</p>
+                    </div>
+                </div>
+            </div>
+
+
+<!--            <div class="columns is-centered has-text-centered">-->
+<!--                <div class="column is-four-fifths">-->
+<!--                    <h2 class="title is-3">References</h2>-->
+<!--                    <div class="content has-text-justified">-->
+<!--                        <p>-->
+<!--                            -->
+<!--                            [1] Wang, B., Zhang, M., Fei, H., Zhao, Y., Li, B., Wu, S., ... & Zhang, M. (2024, October). SpeechEE: A Novel Benchmark for Speech Event Extraction. In Proceedings of the 32nd ACM International Conference on Multimedia (pp. 10449-10458).-->
+<!--                        </p>-->
+
+<!--                        <p>-->
+<!--                            -->
+<!--                            [2] Ying Lin, Heng Ji, Fei Huang, and Lingfei Wu. 2020. A Joint Neural Model for Information Extraction with Global Features. In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics, pages 7999–8009, Online. Association for Computational Linguistics.-->
+<!--                        </p>-->
+<!--                     -->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </section>
+
+
+
+</body>
+<script>
+    // function jsonShowFn(json){
+    //     if (!json.match("^\{(.+:.+,*){1,}\}$")) {
+    //         return json           //判断是否是json数据，不是直接返回
+    //     }
+
+    //     if (typeof json != 'string') {
+    //         json = JSON.stringify(json, undefined, 2);
+    //     }
+    //     json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    //     return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function(match) {
+    //         var cls = 'number';
+    //         if (/^"/.test(match)) {
+    //             if (/:$/.test(match)) {
+    //                 cls = 'key';
+    //             } else {
+    //                 cls = 'string';
+    //             }
+    //         } else if (/true|false/.test(match)) {
+    //             cls = 'boolean';
+    //         } else if (/null/.test(match)) {
+    //             cls = 'null';
+    //         }
+    //         return '<span class="' + cls + '">' + match + '</span>';
+    //     });
+    // }
+    // $('#jsonShow').html(jsonShowFn('[{"imd_id":1,"triple_list":["s":"book","o":"table"]}]'));
+</script>
+</html>
