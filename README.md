@@ -4,5 +4,5 @@ The Responsible Multimodal AI Challenge aims to foster advancements in the devel
 
 
 
-Please refer to the challenge webpage: [Responsible AI challenge @ ICME 25](https://mm-hall-fact.github.io/ICME2025)
+Please refer to the challenge webpage: [Responsible AI challenge @ ACMMM 25](https://mm-hall-fact.github.io/ACMMM2025)
 
