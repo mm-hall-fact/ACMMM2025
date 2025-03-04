@@ -273,7 +273,7 @@ The Responsible Multimodal AI Challenge aims to foster advancements in the devel
                         <p>For each task, we will provide a dataset with a train set ，a dev set and a test set. The annotations
                             are in the form of a JSON file. An example of the task metadata is shown below.</p>
                             <pre><code class="language-json">"metadata": {
-                                "image_id": "00385794700c832e.jpg",
+        "image_id": "00385794700c832e.jpg",
         "system1_question": "What type of shelf is the produce arranged on in the image?",
         "system1_answer": "A produce shelf displays fresh, vibrant vegetables, including bunches of cilantro and other leafy greens placed neatly above a bed of carrots. The greenery is arranged on a blue wire shelf, and the overall setup showcases an organized and aesthetic presentation of fresh produce.",
         "system2_question": "Which of the following systems' outputs belong to hallucination?",
@@ -297,7 +297,7 @@ The Responsible Multimodal AI Challenge aims to foster advancements in the devel
                 "choice": "fresh produce"
             }
         ]
-                            }</code></pre>
+    }</code></pre>
 
 
 
@@ -327,31 +327,31 @@ to assess the claim’s factuality comprehensively.
                             <p>For each task, we will provide a dataset with a train set ，a dev set and a test set. The annotations
                                 are in the form of a JSON file. An example of the task metadata is shown below.</p>
                                 <pre><code class="language-json">"metadata": {
-                                        "image_id": "0234613.jpg",
-                                        "claim": "Corbin Aoyagi a supporter of gay marriage waves a rainbow flag during a rally at the Utah State Capitol on Jan 28",
-                                        "context": "The attorneys general of Virginia and Utah are bringing their state same-sex marriage bans to the Supreme Court. Utah Attorney General Sean Reyes filed a petition with the court, seeking a review of the ruling that struck down Utah's ban on same-sex marriage. Virginia Attorney General Mark Herring plans to do the same, arguing the ban is discriminatory. There is a push for a swift resolution due to the numerous legal victories for same-sex marriage advocates following last summer's Supreme Court decision. Utah's petition questions if the 14th Amendment prevents states from defining marriage as only between a man and a woman. Reyes emphasizes his duty to defend the state's constitution. Herring supports a quick final resolution to affirm marriage rights for all Virginians.",
-                                        "question": "Based on the provided information, please determine whether the claim is factual.",
-                                        "correct_answer": "True",
-                                        "correct_choice": "A",
-                                        "choices": [
-                                            {
-                                                "id": "A",
-                                                "choice": "True"
-                                            },
-                                            {
-                                                "id": "B",
-                                                "choice": "False"
-                                            },
-                                            {
-                                                "id": "C",
-                                                "choice": "Partially True"
-                                            },
-                                            {
-                                                "id": "D",
-                                                "choice": "Not Verifiable"
-                                            }
-                                        ]
-                                }</code></pre>
+        "image_id": "0234613.jpg",
+        "claim": "Corbin Aoyagi a supporter of gay marriage waves a rainbow flag during a rally at the Utah State Capitol on Jan 28",
+        "context": "The attorneys general of Virginia and Utah are bringing their state same-sex marriage bans to the Supreme Court. Utah Attorney General Sean Reyes filed a petition with the court, seeking a review of the ruling that struck down Utah's ban on same-sex marriage. Virginia Attorney General Mark Herring plans to do the same, arguing the ban is discriminatory. There is a push for a swift resolution due to the numerous legal victories for same-sex marriage advocates following last summer's Supreme Court decision. Utah's petition questions if the 14th Amendment prevents states from defining marriage as only between a man and a woman. Reyes emphasizes his duty to defend the state's constitution. Herring supports a quick final resolution to affirm marriage rights for all Virginians.",
+        "question": "Based on the provided information, please determine whether the claim is factual.",
+        "correct_answer": "True",
+        "correct_choice": "A",
+        "choices": [
+            {
+                "id": "A",
+                "choice": "True"
+            },
+            {
+                "id": "B",
+                "choice": "False"
+            },
+            {
+                "id": "C",
+                "choice": "Partially True"
+            },
+            {
+                "id": "D",
+                "choice": "Not Verifiable"
+            }
+        ]
+    }</code></pre>
                                 <br>
 <!--                        <div style="text-align: center;">-->
 <!--                            <img src="static/images/task3.png" width="90%" alt="">-->
@@ -360,7 +360,13 @@ to assess the claim’s factuality comprehensively.
 <!--                        <p>-->
 <!--                            <b>Task-3:</b> Event Quadruple Extraction aims to extract the complete event record quadruple including event trigger, event type, argument role and argument mention. The evaluation metric for this sub-task is the F1 score.-->
 <!--                        </p>-->
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/
                         
+                        <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" />
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
                         <div class="columns is-centered has-text-centered">
                             <div>
                                 <h2 class="title is-3">Evaluation</h2>
